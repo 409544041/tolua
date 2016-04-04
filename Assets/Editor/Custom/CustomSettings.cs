@@ -107,6 +107,7 @@ public static class CustomSettings
         _GT(typeof(RenderTexture)),
         _GT(typeof(Rigidbody)),         
           
+		_GT(typeof(LuaBehaviourScript)),
     };
 
     public static List<Type> dynamicList = new List<Type>()
