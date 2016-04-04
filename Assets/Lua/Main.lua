@@ -7,3 +7,7 @@ end
 function OnLevelWasLoaded(level)
 
 end
+
+
+--直接执行
+Main()
