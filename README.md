@@ -1,4 +1,5 @@
-此工程为Unity C#版tolua的一种简单使用方法示例。Unity C# tolua官方网站为https://github.com/topameng/tolua，详见README_ORIGIN.md。
+此工程为Unity C#版tolua的一种简单使用方法示例。  
+Unity C# tolua官方网站为https://github.com/topameng/tolua。
 
 ---------------
 #文章
