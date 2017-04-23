@@ -17,7 +17,9 @@ public class LuaBehaviour : MonoBehaviour
 
     protected void Awake()
     {
+        // 这一步会触发LuaClient实例化。
         luaState_ = GetMainLuaState();
+
         if (ScriptName != null && ScriptName != null)
         {
             loadScript(ScriptName);
@@ -103,6 +105,7 @@ public class LuaBehaviour : MonoBehaviour
         self_["behaviour"] = this;
     }
 
+    // 调用Lua端的成员方法。会自动将self作为第一个参数，传递到Lua。
     protected object[] CallMethod(string func, params object[] args)
     {
         if (self_ == null)
@@ -154,7 +157,7 @@ public class LuaBehaviour : MonoBehaviour
 		return result;
 	}
 
-    // 这个函数是实例化LuaClient的入口
+    // 这个函数是实例化LuaClient的入口。代码中获取LuaClient都调用这个静态函数。
     public static LuaClient GetLuaClient()
     {
         if (LuaClient.Instance == null)
