@@ -108,6 +108,7 @@ public static class CustomSettings
         _GT(typeof(Rigidbody)),         
           
 		_GT(typeof(LuaBehaviourScript)),
+        _GT(typeof(LuaBehaviour)),
     };
 
     public static List<Type> dynamicList = new List<Type>()
